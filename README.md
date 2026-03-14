@@ -1,16 +1,31 @@
-## Hi there 👋
+👋 Olá, eu sou o Rivadávia Neto
 
-<!--
-**Frizzeraneto0/Frizzeraneto0** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Desenvolvedor apaixonado por tecnologia, automação e criação de sistemas escaláveis.
+🚀 Sempre trabalhando em novos projetos e aprendendo novas tecnologias.
+🧠 Interessado em desenvolvimento web, automação, SaaS e sistemas inteligentes.
 
-Here are some ideas to get you started:
+🚀 Tecnologias que utilizo
+📱 Mobile
+🌐 Front-end
+🖥️ Back-end
+📊 Estatísticas do GitHub
+🧠 Atualmente estudando
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Arquitetura de software
+
+Desenvolvimento SaaS
+
+Integração de IA em sistemas
+
+APIs e microsserviços
+
+🔧 Projetos em destaque
+
+🚧 Em desenvolvimento...
+Em breve novos projetos open-source aparecerão aqui.
+
+📫 Contato
+
+💼 GitHub: https://github.com/Frizzeraneto0
+
+⭐ Sempre aberto para colaboração e novos projetos!
