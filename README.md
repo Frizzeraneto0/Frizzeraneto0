@@ -24,8 +24,4 @@ APIs e microsserviços
 🚧 Em desenvolvimento...
 Em breve novos projetos open-source aparecerão aqui.
 
-📫 Contato
-
-💼 GitHub: https://github.com/Frizzeraneto0
-
 ⭐ Sempre aberto para colaboração e novos projetos!
