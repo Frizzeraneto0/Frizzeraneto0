@@ -32,7 +32,7 @@
 
 </div>
 
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/output/github-snake-dark.svg" alt="" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/output/github-snake-dark.svg?v=20260927" alt="" />
 
 ---
 
