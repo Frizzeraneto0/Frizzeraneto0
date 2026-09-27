@@ -1,0 +1,44 @@
+<svg width="470" height="195" viewBox="0 0 470 195"
+     fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, Sans-Serif; }
+  </style>
+  <rect width="470" height="195" rx="12" fill="#0D1117"/>
+  <text x="25" y="36" fill="#8B5CF6" font-size="17" font-weight="600">Estatísticas de Rivadávia Neto</text>
+  <g>
+    <polygon points="32.00,55.00 33.73,59.62 38.66,59.84 34.80,62.91 36.11,67.66 32.00,64.94 27.89,67.66 29.20,62.91 25.34,59.84 30.27,59.62" fill="#EC4899"/>
+    <text x="49" y="66" fill="#C9D1D9" font-size="14" font-weight="600">Estrelas recebidas</text>
+    <text x="330" y="66" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">0</text>
+  </g>
+  <g>
+    <circle cx="32" cy="87" r="3.4" fill="none" stroke="#EC4899" stroke-width="2"/><path d="M25 87h3.2M35.4 87H39" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+    <text x="49" y="91" fill="#C9D1D9" font-size="14" font-weight="600">Commits</text>
+    <text x="330" y="91" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">842</text>
+  </g>
+  <g>
+    <circle cx="28" cy="108" r="2.6" fill="none" stroke="#EC4899" stroke-width="2"/><circle cx="28" cy="117" r="2.6" fill="none" stroke="#EC4899" stroke-width="2"/><circle cx="37" cy="109" r="2.6" fill="none" stroke="#EC4899" stroke-width="2"/><path d="M28 111v3M37 112v2" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+    <text x="49" y="116" fill="#C9D1D9" font-size="14" font-weight="600">Pull requests</text>
+    <text x="330" y="116" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">236</text>
+  </g>
+  <g>
+    <rect x="26" y="131" width="12" height="12" rx="2" fill="none" stroke="#EC4899" stroke-width="2"/><path d="M29 131v12" stroke="#EC4899" stroke-width="2"/>
+    <text x="49" y="141" fill="#C9D1D9" font-size="14" font-weight="600">Repositórios</text>
+    <text x="330" y="141" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">10</text>
+  </g>
+  <g>
+    <rect x="26" y="157" width="12" height="11" rx="2" fill="none" stroke="#EC4899" stroke-width="2"/><path d="M26 161h12M29.5 155v3M34.5 155v3" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+    <text x="49" y="166" fill="#C9D1D9" font-size="14" font-weight="600">Contribuições (12 meses)</text>
+    <text x="330" y="166" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">1.079</text>
+  </g>
+  <g>
+    <circle cx="398" cy="112" r="38" fill="none" stroke="#21262D" stroke-width="6"/>
+    <circle cx="398" cy="112" r="38" fill="none" stroke="#8B5CF6" stroke-width="6"
+            stroke-linecap="round" stroke-dasharray="238.8"
+            stroke-dashoffset="164.2"
+            transform="rotate(-90 398 112)"/>
+    <text x="398" y="113" text-anchor="middle" fill="#C9D1D9"
+          font-size="20" font-weight="700">114</text>
+    <text x="398" y="129" text-anchor="middle" fill="#8B949E"
+          font-size="10">dias ativos</text>
+  </g>
+</svg>

@@ -97,29 +97,12 @@ servidor, e o mínimo possível de mágica no meio do caminho.
 <!-- ESTATISTICAS:INICIO -->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Contribui%C3%A7%C3%B5es%20%2812%20meses%29-1.078-6366F1?style=for-the-badge&labelColor=1F2937" alt="" />
-<img src="https://img.shields.io/badge/Commits-841-8B5CF6?style=for-the-badge&labelColor=1F2937" alt="" />
-<img src="https://img.shields.io/badge/Pull%20requests-236-EC4899?style=for-the-badge&labelColor=1F2937" alt="" />
-<img src="https://img.shields.io/badge/Reposit%C3%B3rios-10-6366F1?style=for-the-badge&labelColor=1F2937" alt="" />
-<img src="https://img.shields.io/badge/Sequ%C3%AAncia%20atual-1%20dia-8B5CF6?style=for-the-badge&labelColor=1F2937" alt="" />
-<img src="https://img.shields.io/badge/Maior%20sequ%C3%AAncia-7%20dias-EC4899?style=for-the-badge&labelColor=1F2937" alt="" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/estatisticas.svg?v=e1349c88" alt="Estatísticas do GitHub" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/linguagens.svg?v=e1349c88" alt="Linguagens mais usadas" />
+
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/sequencia.svg?v=e1349c88" alt="Sequência de contribuições" />
 
 </div>
-
-**Linguagens**, por bytes de código — incluindo os repositórios privados:
-
-```text
-Python       ██████████████░░░░░░░░░░░░ 53.76%
-PHP          ████░░░░░░░░░░░░░░░░░░░░░░ 15.76%
-TypeScript   ███░░░░░░░░░░░░░░░░░░░░░░░ 11.00%
-HTML         ██░░░░░░░░░░░░░░░░░░░░░░░░  7.92%
-CSS          █░░░░░░░░░░░░░░░░░░░░░░░░░  5.64%
-JavaScript   █░░░░░░░░░░░░░░░░░░░░░░░░░  4.00%
-C++          ░░░░░░░░░░░░░░░░░░░░░░░░░░  0.65%
-CMake        ░░░░░░░░░░░░░░░░░░░░░░░░░░  0.52%
-```
-
-<sub>Gerado por <a href="../../actions/workflows/estatisticas.yml">.github/workflows/estatisticas.yml</a>, todo dia às 3h30.</sub>
 <!-- ESTATISTICAS:FIM -->
 
 ---
