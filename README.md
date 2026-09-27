@@ -61,24 +61,34 @@ servidor, e o mínimo possível de mágica no meio do caminho.
 
 ## 🛠️ Tecnologias
 
-<div align="center">
-
-### Back-end
-<img src="https://skillicons.dev/icons?i=python,django,flask,fastapi,php,nodejs&theme=dark" alt="" />
-
-### Front-end
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,bootstrap&theme=dark" alt="" />
-
-### Mobile
-<img src="https://skillicons.dev/icons?i=flutter,dart&theme=dark" alt="" />
-
-### Banco de dados
-<img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,redis&theme=dark" alt="" />
-
-### DevOps e ferramentas
-<img src="https://skillicons.dev/icons?i=docker,linux,nginx,git,github,githubactions,bash,vscode,postman&theme=dark" alt="" />
-
-</div>
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <b>Back-end</b><br/><br/>
+      <img height="38" src="https://skillicons.dev/icons?i=python,django,flask,fastapi,php,nodejs&theme=dark" alt="" />
+    </td>
+    <td align="center" width="50%">
+      <b>Front-end</b><br/><br/>
+      <img height="38" src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,bootstrap&theme=dark" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>Mobile</b><br/><br/>
+      <img height="38" src="https://skillicons.dev/icons?i=flutter,dart&theme=dark" alt="" />
+    </td>
+    <td align="center" width="50%">
+      <b>Banco de dados</b><br/><br/>
+      <img height="38" src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,redis&theme=dark" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <b>DevOps e ferramentas</b><br/><br/>
+      <img height="38" src="https://skillicons.dev/icons?i=docker,linux,nginx,git,github,githubactions,bash,vscode,postman&theme=dark" alt="" />
+    </td>
+  </tr>
+</table>
 
 ---
 
