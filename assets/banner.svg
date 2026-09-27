@@ -1,0 +1,56 @@
+<svg width="830" height="210" viewBox="0 0 830 210"
+     fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <linearGradient id="b_g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <pattern id="b_grade" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#21262D"/>
+    </pattern>
+    <filter id="b_blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <linearGradient id="b_esmaece" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8B5CF6" stop-opacity="1"/>
+      <stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .cursor { animation: pisca 1.2s steps(1) infinite; }
+    @keyframes pisca { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0.15; } }
+  </style>
+  <rect width="830" height="210" rx="14" fill="#0D1117"/>
+  <rect width="830" height="210" rx="14" fill="url(#b_grade)" opacity="0.55"/>
+
+  <g opacity="0.4" filter="url(#b_blur)">
+    <ellipse cx="120" cy="40" rx="150" ry="70" fill="#6366F1"/>
+    <ellipse cx="470" cy="215" rx="200" ry="80" fill="#8B5CF6"/>
+    <ellipse cx="800" cy="30" rx="150" ry="70" fill="#EC4899"/>
+  </g>
+
+  <g>
+    <circle cx="30" cy="28" r="5" fill="#FF5F56" opacity="0.85"/>
+    <circle cx="48" cy="28" r="5" fill="#FFBD2E" opacity="0.85"/>
+    <circle cx="66" cy="28" r="5" fill="#27C93F" opacity="0.85"/>
+  </g>
+  <path d="M0 52h830" stroke="#21262D" stroke-width="1"/>
+
+  <text x="40" y="94" font-size="13" fill="#7D8590">
+    <tspan fill="#8B5CF6">rivadavia@github:~$</tspan> whoami
+  </text>
+
+  <text x="40" y="146" font-size="42" font-weight="700" fill="#E6EDF3"
+        letter-spacing="-1">Rivadávia Neto</text>
+  <rect x="388" y="124" width="13" height="28" fill="#8B5CF6" class="cursor"/>
+
+  <text x="42" y="176" font-size="14" fill="#7D8590">
+    <tspan fill="#8B5CF6">//</tspan> Desenvolvedor Full Stack · Automação · SaaS
+  </text>
+
+  <rect x="40" y="194" width="750" height="2" rx="1"
+        fill="url(#b_esmaece)" opacity="0.8"/>
+</svg>

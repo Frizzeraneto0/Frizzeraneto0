@@ -1,0 +1,41 @@
+<svg width="830" height="108" viewBox="0 0 830 108"
+     fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <linearGradient id="r_g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366F1"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <pattern id="r_grade" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#21262D"/>
+    </pattern>
+    <filter id="r_blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <linearGradient id="r_esmaece" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#8B5CF6" stop-opacity="1"/>
+      <stop offset="1" stop-color="#EC4899" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .cursor { animation: pisca 1.2s steps(1) infinite; }
+    @keyframes pisca { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0.15; } }
+  </style>
+  <rect width="830" height="108" rx="14" fill="#0D1117"/>
+  <rect width="830" height="108" rx="14" fill="url(#r_grade)" opacity="0.45"/>
+
+  <g opacity="0.35" filter="url(#r_blur)">
+    <ellipse cx="415.0" cy="128" rx="320" ry="70" fill="#8B5CF6"/>
+  </g>
+
+  <rect x="40" y="22" width="750" height="2" rx="1"
+        fill="url(#r_esmaece)" opacity="0.8"/>
+
+  <text x="415.0" y="66" text-anchor="middle" font-size="14"
+        fill="#7D8590">
+    <tspan fill="#8B5CF6">rivadavia@github:~$</tspan> exit
+  </text>
+  <rect x="526" y="52" width="8" height="17" fill="#8B5CF6" class="cursor"/>
+</svg>

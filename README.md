@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:8B5CF6,100:EC4899&height=200&section=header&text=Rivad%C3%A1via%20Neto&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=Desenvolvedor%20Full%20Stack%20%E2%80%A2%20Automa%C3%A7%C3%A3o%20%E2%80%A2%20SaaS&descAlignY=58&descSize=18&animation=fadeIn" alt="" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/banner.svg?v=1" alt="Rivadávia Neto — Desenvolvedor Full Stack" />
 
 <a href="https://github.com/Frizzeraneto0">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=8B5CF6&center=true&vCenter=true&width=620&lines=Sistemas+escal%C3%A1veis+de+ponta+a+ponta;Django+%E2%80%A2+Python+%E2%80%A2+PostgreSQL+%E2%80%A2+Docker;Automa%C3%A7%C3%A3o+e+integra%C3%A7%C3%A3o+de+IA;Arquitetura+de+software+e+APIs" alt="" />
@@ -96,6 +96,6 @@ Aberto a colaboração, novos projetos e boas ideias.
 
 <i>⭐ Se algum projeto te ajudou, uma estrela é sempre bem-vinda.</i>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:EC4899,50:8B5CF6,100:6366F1&height=120&section=footer" alt="" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/rodape.svg?v=1" alt="" />
 
 </div>
