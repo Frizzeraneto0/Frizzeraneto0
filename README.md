@@ -94,17 +94,33 @@ servidor, e o mínimo possível de mágica no meio do caminho.
 
 ## 📊 Estatísticas
 
+<!-- ESTATISTICAS:INICIO -->
 <div align="center">
 
-<img height="165" src="https://github-readme-stats-salesp07.vercel.app/api?username=Frizzeraneto0&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117&locale=pt-br" alt="" />
-<img height="165" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=Frizzeraneto0&layout=compact&langs_count=8&hide_border=true&border_radius=12&title_color=8B5CF6&text_color=C9D1D9&bg_color=0D1117&locale=pt-br" alt="" />
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=Frizzeraneto0&hide_border=true&border_radius=12&locale=pt_BR&background=0D1117&ring=8B5CF6&fire=EC4899&currStreakLabel=8B5CF6&sideLabels=C9D1D9&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9" alt="" />
-
+<img src="https://img.shields.io/badge/Contribui%C3%A7%C3%B5es%20%2812%20meses%29-1.078-6366F1?style=for-the-badge&labelColor=1F2937" alt="" />
+<img src="https://img.shields.io/badge/Commits-841-8B5CF6?style=for-the-badge&labelColor=1F2937" alt="" />
+<img src="https://img.shields.io/badge/Pull%20requests-236-EC4899?style=for-the-badge&labelColor=1F2937" alt="" />
+<img src="https://img.shields.io/badge/Reposit%C3%B3rios-10-6366F1?style=for-the-badge&labelColor=1F2937" alt="" />
+<img src="https://img.shields.io/badge/Sequ%C3%AAncia%20atual-1%20dia-8B5CF6?style=for-the-badge&labelColor=1F2937" alt="" />
+<img src="https://img.shields.io/badge/Maior%20sequ%C3%AAncia-7%20dias-EC4899?style=for-the-badge&labelColor=1F2937" alt="" />
 
 </div>
+
+**Linguagens**, por bytes de código — incluindo os repositórios privados:
+
+```text
+Python       ██████████████░░░░░░░░░░░░ 53.76%
+PHP          ████░░░░░░░░░░░░░░░░░░░░░░ 15.76%
+TypeScript   ███░░░░░░░░░░░░░░░░░░░░░░░ 11.00%
+HTML         ██░░░░░░░░░░░░░░░░░░░░░░░░  7.92%
+CSS          █░░░░░░░░░░░░░░░░░░░░░░░░░  5.64%
+JavaScript   █░░░░░░░░░░░░░░░░░░░░░░░░░  4.00%
+C++          ░░░░░░░░░░░░░░░░░░░░░░░░░░  0.65%
+CMake        ░░░░░░░░░░░░░░░░░░░░░░░░░░  0.52%
+```
+
+<sub>Gerado por <a href="../../actions/workflows/estatisticas.yml">.github/workflows/estatisticas.yml</a>, todo dia às 3h30.</sub>
+<!-- ESTATISTICAS:FIM -->
 
 ---
 

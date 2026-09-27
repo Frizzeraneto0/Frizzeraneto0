@@ -1,0 +1,38 @@
+name: Atualizar estatisticas do README
+
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Calcular os numeros
+        env:
+          # PAT com escopo repo + read:user, para enxergar repositorio e
+          # contribuicao privados. Sem ele o script roda com o token do
+          # workflow e os numeros caem para o que e publico.
+          GH_TOKEN: ${{ secrets.PAT_CONTRIBUICOES || github.token }}
+        run: python .github/scripts/estatisticas.py
+
+      - name: Publicar se mudou
+        run: |
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "Estatisticas do README: numeros do dia"
+            git push
+          else
+            echo "nada mudou"
+          fi
