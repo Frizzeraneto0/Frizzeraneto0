@@ -18,6 +18,11 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # PAT com escopo read:user, se existir; senao o token padrao.
+          # O PAT so ajuda DEPOIS de ligar "Include private contributions
+          # on my profile" em github.com/settings/profile -- sem isso o
+          # calendario publico nao tem os dias privados para desenhar.
+          github_token: ${{ secrets.PAT_CONTRIBUICOES || github.token }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark

@@ -86,20 +86,13 @@ servidor, e o mínimo possível de mágica no meio do caminho.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Frizzeraneto0&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117&locale=pt-br" alt="" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Frizzeraneto0&layout=compact&langs_count=8&hide_border=true&border_radius=12&title_color=8B5CF6&text_color=C9D1D9&bg_color=0D1117&locale=pt-br" alt="" />
+<img height="165" src="https://github-readme-stats-salesp07.vercel.app/api?username=Frizzeraneto0&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117&locale=pt-br" alt="" />
+<img height="165" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=Frizzeraneto0&layout=compact&langs_count=8&hide_border=true&border_radius=12&title_color=8B5CF6&text_color=C9D1D9&bg_color=0D1117&locale=pt-br" alt="" />
 
 <br/>
 
 <img src="https://streak-stats.demolab.com?user=Frizzeraneto0&hide_border=true&border_radius=12&locale=pt_BR&background=0D1117&ring=8B5CF6&fire=EC4899&currStreakLabel=8B5CF6&sideLabels=C9D1D9&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9" alt="" />
 
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Frizzeraneto0&bg_color=0D1117&color=C9D1D9&line=8B5CF6&point=EC4899&area=true&area_color=6366F1&hide_border=true&custom_title=Atividade%20dos%20%C3%BAltimos%2031%20dias" alt="" />
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=Frizzeraneto0&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="" />
 
 </div>
 
@@ -125,10 +118,10 @@ Loja de cosméticos reescrita de PHP para Django, no ar em VPS própria.
 <div align="center">
 
 <a href="https://github.com/Frizzeraneto0/atlas-ia-assist">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Frizzeraneto0&repo=atlas-ia-assist&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117" alt="" />
+  <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=Frizzeraneto0&repo=atlas-ia-assist&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117" alt="" />
 </a>
 <a href="https://github.com/Frizzeraneto0/service-scheduler-pro">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Frizzeraneto0&repo=service-scheduler-pro&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117" alt="" />
+  <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=Frizzeraneto0&repo=service-scheduler-pro&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117" alt="" />
 </a>
 
 </div>
