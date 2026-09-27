@@ -98,53 +98,6 @@ servidor, e o mínimo possível de mágica no meio do caminho.
 
 ---
 
-## 🚀 Projetos em destaque
-
-### 🛍️ RS Beauty Store — e-commerce completo em Django
-
-Loja de cosméticos reescrita de PHP para Django, no ar em VPS própria.
-**Repositório privado** — abaixo, o que ele resolve.
-
-<table>
-  <tr><td><b>Stack</b></td><td>Django · PostgreSQL 16 · nginx · gunicorn · Docker · Ubuntu ARM</td></tr>
-  <tr><td><b>Pagamento</b></td><td>Mercado Pago (Checkout Pro) atrás de um módulo único — PIX, cartão e boleto, com webhook</td></tr>
-  <tr><td><b>Estoque</b></td><td>baixa no pagamento confirmado, não na criação do pedido — razão e saldo auditáveis</td></tr>
-  <tr><td><b>Segurança</b></td><td>limite de tentativa por conta e por rede, cache no PostgreSQL, fail2ban, HTTPS via Let&rsquo;s Encrypt</td></tr>
-  <tr><td><b>Mídia</b></td><td>vídeos da vitrine convertidos com ffmpeg em capa WebP e prévia de 6 s</td></tr>
-</table>
-
-### 📂 Código aberto
-
-<div align="center">
-
-<a href="https://github.com/Frizzeraneto0/atlas-ia-assist">
-  <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=Frizzeraneto0&repo=atlas-ia-assist&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117" alt="" />
-</a>
-<a href="https://github.com/Frizzeraneto0/service-scheduler-pro">
-  <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=Frizzeraneto0&repo=service-scheduler-pro&hide_border=true&border_radius=12&title_color=8B5CF6&icon_color=EC4899&text_color=C9D1D9&bg_color=0D1117" alt="" />
-</a>
-
-</div>
-
-- **[atlas-ia-assist](https://github.com/Frizzeraneto0/atlas-ia-assist)** — assistente pessoal conversacional sobre Llama, em Python
-- **[service-scheduler-pro](https://github.com/Frizzeraneto0/service-scheduler-pro)** — agendamento de serviços em TypeScript
-- **[estudo_flutter](https://github.com/Frizzeraneto0/estudo_flutter)** — estudo de consumo de API em Flutter
-
-> 🚧 Mais projetos open-source chegando. Este espaço é atualizado conforme eles saem do forno.
-
----
-
-## 📈 O que estou estudando
-
-| Área | Por quê |
-|---|---|
-| **Arquitetura de software** | separar o que muda do que não muda, antes de o sistema crescer |
-| **Desenvolvimento SaaS** | multi-tenancy, cobrança recorrente e onboarding |
-| **Integração de IA** | usar modelo onde ele resolve, não onde ele enfeita |
-| **APIs e microsserviços** | contratos claros e falha isolada |
-
----
-
 <div align="center">
 
 ### 💬 Vamos conversar
