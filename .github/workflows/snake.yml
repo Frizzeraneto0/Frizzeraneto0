@@ -23,9 +23,12 @@ jobs:
           # on my profile" em github.com/settings/profile -- sem isso o
           # calendario publico nao tem os dias privados para desenhar.
           github_token: ${{ secrets.PAT_CONTRIBUICOES || github.token }}
+          # A paleta "github-dark" do Platane e mais escura que a do
+          # GitHub de verdade (nivel 1 em #01311f contra #0e4429). As
+          # cinco cores abaixo sao as do grafico original.
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=#8B5CF6&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-snake-dark.svg?color_snake=#8B5CF6&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
       - name: Publicar no branch output
         uses: crazy-max/ghaction-github-pages@v4
