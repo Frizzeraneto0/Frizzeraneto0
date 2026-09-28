@@ -1,8 +1,12 @@
 name: Gerar cobrinha de contribuicoes
 
 on:
+  # Meia-noite de Brasilia e 03h UTC. O agendamento do Actions e
+  # melhor esforco, nao horario: medido neste repositorio, o atraso
+  # foi de 6h15 a 6h31. Dois disparos por dia para que o desenho
+  # nao fique preso no atraso de um deles.
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 3,15 * * *"
   workflow_dispatch:
   push:
     branches:

@@ -1,8 +1,13 @@
 name: Atualizar estatisticas do README
 
 on:
+  # Meia-noite de Brasilia e 03h UTC. O agendamento do Actions e
+  # melhor esforco, nao horario: medido neste repositorio, o atraso
+  # foi de 6h15 a 6h31. Por isso quatro disparos por dia -- algum
+  # cai logo depois da virada, e o passo de publicar so commita
+  # quando algo mudou, entao a repeticao nao gera ruido.
   schedule:
-    - cron: "30 3 * * *"
+    - cron: "5 3,9,15,21 * * *"
   workflow_dispatch:
 
 jobs:
