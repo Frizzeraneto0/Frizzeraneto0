@@ -27,10 +27,12 @@ jobs:
 
       - name: Publicar se mudou
         run: |
-          if [ -n "$(git status --porcelain README.md)" ]; then
+          # assets/ tambem: sem isso os SVGs regerados ficam no runner
+          # e so a URL no README muda, apontando para o desenho antigo.
+          if [ -n "$(git status --porcelain README.md assets)" ]; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
+            git add README.md assets
             git commit -m "Estatisticas do README: numeros do dia"
             git push
           else

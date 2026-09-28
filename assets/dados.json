@@ -1,0 +1,24 @@
+{
+  "commits": 848,
+  "estrelas": 0,
+  "linguagens": {
+    "C": 1488,
+    "C++": 24811,
+    "CMake": 19736,
+    "CSS": 215171,
+    "Dart": 13970,
+    "HTML": 302058,
+    "Hack": 296,
+    "JavaScript": 152754,
+    "Kotlin": 127,
+    "Objective-C": 38,
+    "PHP": 601099,
+    "PLpgSQL": 6351,
+    "Python": 2079759,
+    "Shell": 4527,
+    "Swift": 2036,
+    "TypeScript": 419428
+  },
+  "prs": 236,
+  "repos": 10
+}

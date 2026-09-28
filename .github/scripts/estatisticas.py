@@ -170,9 +170,10 @@ def moldura(largura, altura, titulo, miolo):
 
 # ------------------------------------------------------------- dados
 
-dados = graphql(
+dados_raiz = graphql(
     """
 {
+  viewer { login }
   user(login: "%s") {
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
       totalCount
@@ -194,7 +195,25 @@ dados = graphql(
 }
 """
     % USUARIO
-)["user"]
+)
+dados = dados_raiz["user"]
+
+# O calendario de contribuicao e publico, entao qualquer token le. Ja
+# commits, PRs, estrelas e o tamanho por linguagem dependem de ver
+# repositorio privado -- so o token do proprio dono enxerga. Com o
+# token do workflow, que e um bot, esses quatro despencam: 20 commits
+# no lugar de 842. Reaproveitar o ultimo valor bom e melhor que
+# publicar um numero errado.
+COMPLETO = dados_raiz["viewer"]["login"].lower() == USUARIO.lower()
+GUARDADO = os.path.join(ASSETS, "dados.json")
+
+
+def avisa(texto):
+    print(f"::warning::{texto}")
+    resumo = os.environ.get("GITHUB_STEP_SUMMARY")
+    if resumo:
+        with open(resumo, "a", encoding="utf-8") as f:
+            f.write("> [!WARNING]" + chr(10) + "> " + texto + chr(10))
 
 calendario = dados["contributionsCollection"]["contributionCalendar"]
 grade = sorted((d for s in calendario["weeks"] for d in s["contributionDays"]),
@@ -231,21 +250,46 @@ if fim_maior:
 if atual:
     comeco_atual = grade[len(grade) - atual]["date"]
 
-commits = api(
-    "search/commits?q=" + urllib.parse.quote(f"author:{USUARIO}") + "&per_page=1",
-    {"Accept": "application/vnd.github.cloak-preview+json"},
-)["total_count"]
+if COMPLETO:
+    commits = api(
+        "search/commits?q=" + urllib.parse.quote(f"author:{USUARIO}")
+        + "&per_page=1",
+        {"Accept": "application/vnd.github.cloak-preview+json"},
+    )["total_count"]
 
-por_lingua = collections.Counter()
-estrelas = 0
-for repo in dados["repositories"]["nodes"]:
-    estrelas += repo["stargazerCount"]
-    for aresta in repo["languages"]["edges"]:
-        por_lingua[aresta["node"]["name"]] += aresta["size"]
+    por_lingua = collections.Counter()
+    estrelas = 0
+    for repo in dados["repositories"]["nodes"]:
+        estrelas += repo["stargazerCount"]
+        for aresta in repo["languages"]["edges"]:
+            por_lingua[aresta["node"]["name"]] += aresta["size"]
+
+    repos = dados["repositories"]["totalCount"]
+    prs = dados["pullRequests"]["totalCount"]
+
+    with open(GUARDADO, "w", encoding="utf-8") as f:
+        json.dump({"commits": commits, "prs": prs, "repos": repos,
+                   "estrelas": estrelas, "linguagens": dict(por_lingua)},
+                  f, ensure_ascii=False, indent=2, sort_keys=True)
+else:
+    if not os.path.exists(GUARDADO):
+        avisa("Token sem acesso ao que e privado e sem valor guardado em "
+              "assets/dados.json. Nada foi alterado. Crie o secret "
+              "PAT_CONTRIBUICOES com escopo repo + read:user.")
+        sys.exit(0)
+    with open(GUARDADO, encoding="utf-8") as f:
+        guardado = json.load(f)
+    commits = guardado["commits"]
+    prs = guardado["prs"]
+    repos = guardado["repos"]
+    estrelas = guardado["estrelas"]
+    por_lingua = collections.Counter(guardado["linguagens"])
+    avisa("Rodou com o token do workflow: contribuicoes e sequencias estao "
+          "do dia, mas commits, PRs, estrelas e linguagens vieram de "
+          "assets/dados.json. Crie o secret PAT_CONTRIBUICOES (escopo "
+          "repo + read:user) para medir tudo.")
 
 total_bytes = sum(por_lingua.values()) or 1
-repos = dados["repositories"]["totalCount"]
-prs = dados["pullRequests"]["totalCount"]
 contribuicoes = calendario["totalContributions"]
 
 
@@ -383,7 +427,7 @@ novo = padrao.sub(lambda _: bloco_readme, texto)
 if novo != texto:
     open(README, "w", encoding="utf-8", newline="\n").write(novo)
 
-print(f"cartoes gerados (assinatura {assinatura})")
+print(f"cartoes gerados (assinatura {assinatura}) -- modo {'completo' if COMPLETO else 'parcial'}")
 print(f"  estrelas      : {estrelas}")
 print(f"  commits       : {num(commits)}")
 print(f"  pull requests : {num(prs)}")
