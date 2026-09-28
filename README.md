@@ -32,7 +32,11 @@
 
 </div>
 
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/output/github-snake-dark.svg?v=20260927" alt="" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/output/github-snake-dark.svg?v=20260928" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/output/github-snake.svg?v=20260928" />
+  <img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/output/github-snake-dark.svg?v=20260928" alt="Gráfico de contribuições" />
+</picture>
 
 ---
 
