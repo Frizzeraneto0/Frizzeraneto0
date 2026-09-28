@@ -28,7 +28,7 @@
   <g>
     <rect x="26" y="157" width="12" height="11" rx="2" fill="none" stroke="#EC4899" stroke-width="2"/><path d="M26 161h12M29.5 155v3M34.5 155v3" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
     <text x="49" y="166" fill="#C9D1D9" font-size="14" font-weight="600">Contribuições (12 meses)</text>
-    <text x="330" y="166" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">1.083</text>
+    <text x="330" y="166" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">1.095</text>
   </g>
   <g>
     <circle cx="398" cy="112" r="38" fill="none" stroke="#21262D" stroke-width="6"/>
