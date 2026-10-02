@@ -78,10 +78,10 @@ servidor, e o mínimo possível de mágica no meio do caminho.
 <!-- ESTATISTICAS:INICIO -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/estatisticas.svg?v=d56523f3" alt="Estatísticas do GitHub" />
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/linguagens.svg?v=d56523f3" alt="Linguagens mais usadas" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/estatisticas.svg?v=40d62880" alt="Estatísticas do GitHub" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/linguagens.svg?v=40d62880" alt="Linguagens mais usadas" />
 
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/sequencia.svg?v=d56523f3" alt="Sequência de contribuições" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/sequencia.svg?v=40d62880" alt="Sequência de contribuições" />
 
 </div>
 <!-- ESTATISTICAS:FIM -->
