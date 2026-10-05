@@ -34,7 +34,7 @@
     <circle cx="398" cy="112" r="38" fill="none" stroke="#21262D" stroke-width="6"/>
     <circle cx="398" cy="112" r="38" fill="none" stroke="#8B5CF6" stroke-width="6"
             stroke-linecap="round" stroke-dasharray="238.8"
-            stroke-dashoffset="159.6"
+            stroke-dashoffset="159.8"
             transform="rotate(-90 398 112)"/>
     <text x="398" y="113" text-anchor="middle" fill="#C9D1D9"
           font-size="20" font-weight="700">121</text>
