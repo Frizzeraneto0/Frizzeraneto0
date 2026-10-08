@@ -28,16 +28,16 @@
   <g>
     <rect x="26" y="157" width="12" height="11" rx="2" fill="none" stroke="#EC4899" stroke-width="2"/><path d="M26 161h12M29.5 155v3M34.5 155v3" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
     <text x="49" y="166" fill="#C9D1D9" font-size="14" font-weight="600">Contribuições (12 meses)</text>
-    <text x="330" y="166" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">1.226</text>
+    <text x="330" y="166" fill="#C9D1D9" font-size="14" font-weight="700" text-anchor="end">1.276</text>
   </g>
   <g>
     <circle cx="398" cy="112" r="38" fill="none" stroke="#21262D" stroke-width="6"/>
     <circle cx="398" cy="112" r="38" fill="none" stroke="#8B5CF6" stroke-width="6"
             stroke-linecap="round" stroke-dasharray="238.8"
-            stroke-dashoffset="158.5"
+            stroke-dashoffset="157.9"
             transform="rotate(-90 398 112)"/>
     <text x="398" y="113" text-anchor="middle" fill="#C9D1D9"
-          font-size="20" font-weight="700">124</text>
+          font-size="20" font-weight="700">125</text>
     <text x="398" y="129" text-anchor="middle" fill="#8B949E"
           font-size="10">dias ativos</text>
   </g>
