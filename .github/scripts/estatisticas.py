@@ -449,16 +449,41 @@ miolo.append(f'  <path d="{traco} L{ESQ + plot_l:.1f} {TOPO + plot_a} '
 miolo.append(f'  <path d="{traco}" fill="none" stroke="{TITULO}" '
              f'stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
 
-# rotulo so no pico -- numero em todo ponto vira ruido
-if pico:
-    i_pico = max(range(len(recentes)),
-                 key=lambda i: recentes[i]["contributionCount"])
-    px, py = ponto(i_pico, pico)
-    miolo.append(f'  <circle cx="{px:.1f}" cy="{py:.1f}" r="3.5" '
-                 f'fill="{ACENTO}" stroke="{FUNDO}" stroke-width="2"/>')
-    ancora = "end" if i_pico > len(recentes) - 5 else "middle"
-    miolo.append(f'  <text x="{px:.1f}" y="{py - 10:.1f}" text-anchor="{ancora}" '
-                 f'fill="{TEXTO}" font-size="11" font-weight="700">{pico}</text>')
+# rotulo nos maiores picos. Nao e numero em todo ponto: so maximo
+# local, o maior primeiro, e cada um precisa estar a pelo menos 2 dias
+# do rotulo ja aceito -- vizinhos colados se sobrepoem na largura do
+# passo. Como <img> nao da hover, esses rotulos sao a unica forma de
+# ler valor fora das marcas do eixo.
+MAX_ROTULOS = 6
+DISTANCIA = 2
+
+valores = [d["contributionCount"] for d in recentes]
+candidatos = [
+    i for i, v in enumerate(valores)
+    if v > 0
+    and (i == 0 or v >= valores[i - 1])
+    and (i == len(valores) - 1 or v >= valores[i + 1])
+]
+candidatos.sort(key=lambda i: (-valores[i], i))
+
+escolhidos = []
+for i in candidatos:
+    if len(escolhidos) >= MAX_ROTULOS:
+        break
+    if all(abs(i - j) >= DISTANCIA for j in escolhidos):
+        escolhidos.append(i)
+
+for i in sorted(escolhidos):
+    v = valores[i]
+    px, py = ponto(i, v)
+    destaque = v == pico
+    miolo.append(f'  <circle cx="{px:.1f}" cy="{py:.1f}" r="{3.5 if destaque else 2.8}" '
+                 f'fill="{ACENTO if destaque else TITULO}" stroke="{FUNDO}" '
+                 f'stroke-width="2"/>')
+    ancora = "end" if i >= len(valores) - 2 else ("start" if i <= 1 else "middle")
+    miolo.append(f'  <text x="{px:.1f}" y="{py - 9:.1f}" text-anchor="{ancora}" '
+                 f'fill="{TEXTO if destaque else APAGADO}" font-size="10.5" '
+                 f'font-weight="{700 if destaque else 600}">{v}</text>')
 
 # eixo X: uma data a cada 7 dias, mais o ultimo dia
 marcas = list(range(0, len(recentes), 7))
@@ -519,4 +544,5 @@ print(f"  repositorios  : {repos}")
 print(f"  contribuicoes : {num(contribuicoes)}  ({ativos} dias ativos)")
 print(f"  sequencias    : atual {atual}, maior {maior}")
 print(f"  linguagens    : {len(por_lingua)} ({num(total_bytes)} bytes)")
-print(f"  30 dias       : {num(soma)} contribuicoes, pico de {pico}")
+print(f"  30 dias       : {num(soma)} contribuicoes, pico de {pico}, "
+      f"{len(escolhidos)} rotulos")
