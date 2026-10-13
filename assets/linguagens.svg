@@ -5,44 +5,44 @@
   </style>
   <rect width="350" height="195" rx="12" fill="#0D1117"/>
   <text x="25" y="36" fill="#8B5CF6" font-size="17" font-weight="600">Linguagens mais usadas</text>
-  <rect x="25.0" y="56" width="162.3" height="9" fill="#3572A5" rx="4"/>
-  <rect x="187.3" y="56" width="46.9" height="9" fill="#4F5D95"/>
-  <rect x="234.2" y="56" width="32.7" height="9" fill="#3178c6"/>
-  <rect x="267.0" y="56" width="23.6" height="9" fill="#e34c26"/>
-  <rect x="290.6" y="56" width="16.8" height="9" fill="#663399"/>
-  <rect x="307.4" y="56" width="11.9" height="9" fill="#f1e05a"/>
-  <rect x="319.3" y="56" width="1.9" height="9" fill="#f34b7d"/>
-  <rect x="321.2" y="56" width="1.5" height="9" fill="#DA3434"/>
+  <rect x="25.0" y="56" width="165.7" height="9" fill="#3572A5" rx="4"/>
+  <rect x="190.7" y="56" width="43.9" height="9" fill="#4F5D95"/>
+  <rect x="234.6" y="56" width="31.7" height="9" fill="#3178c6"/>
+  <rect x="266.4" y="56" width="22.9" height="9" fill="#e34c26"/>
+  <rect x="289.3" y="56" width="15.8" height="9" fill="#663399"/>
+  <rect x="305.1" y="56" width="14.1" height="9" fill="#f1e05a"/>
+  <rect x="319.2" y="56" width="1.8" height="9" fill="#f34b7d"/>
+  <rect x="321.0" y="56" width="1.4" height="9" fill="#DA3434"/>
   <g>
     <circle cx="30" cy="88" r="5" fill="#3572A5"/>
-    <text x="41" y="92" fill="#C9D1D9" font-size="12">Python 54.11%</text>
+    <text x="41" y="92" fill="#C9D1D9" font-size="12">Python 55.23%</text>
   </g>
   <g>
     <circle cx="190" cy="88" r="5" fill="#4F5D95"/>
-    <text x="201" y="92" fill="#C9D1D9" font-size="12">PHP 15.64%</text>
+    <text x="201" y="92" fill="#C9D1D9" font-size="12">PHP 14.65%</text>
   </g>
   <g>
     <circle cx="30" cy="110" r="5" fill="#3178c6"/>
-    <text x="41" y="114" fill="#C9D1D9" font-size="12">TypeScript 10.91%</text>
+    <text x="41" y="114" fill="#C9D1D9" font-size="12">TypeScript 10.57%</text>
   </g>
   <g>
     <circle cx="190" cy="110" r="5" fill="#e34c26"/>
-    <text x="201" y="114" fill="#C9D1D9" font-size="12">HTML 7.86%</text>
+    <text x="201" y="114" fill="#C9D1D9" font-size="12">HTML 7.63%</text>
   </g>
   <g>
     <circle cx="30" cy="132" r="5" fill="#663399"/>
-    <text x="41" y="136" fill="#C9D1D9" font-size="12">CSS 5.60%</text>
+    <text x="41" y="136" fill="#C9D1D9" font-size="12">CSS 5.27%</text>
   </g>
   <g>
     <circle cx="190" cy="132" r="5" fill="#f1e05a"/>
-    <text x="201" y="136" fill="#C9D1D9" font-size="12">JavaScript 3.97%</text>
+    <text x="201" y="136" fill="#C9D1D9" font-size="12">JavaScript 4.72%</text>
   </g>
   <g>
     <circle cx="30" cy="154" r="5" fill="#f34b7d"/>
-    <text x="41" y="158" fill="#C9D1D9" font-size="12">C++ 0.65%</text>
+    <text x="41" y="158" fill="#C9D1D9" font-size="12">C++ 0.60%</text>
   </g>
   <g>
     <circle cx="190" cy="154" r="5" fill="#DA3434"/>
-    <text x="201" y="158" fill="#C9D1D9" font-size="12">CMake 0.51%</text>
+    <text x="201" y="158" fill="#C9D1D9" font-size="12">CMake 0.48%</text>
   </g>
 </svg>

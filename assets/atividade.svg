@@ -1,0 +1,25 @@
+<svg width="830" height="196" viewBox="0 0 830 196"
+     fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+  <style>
+    text { font-family: 'Segoe UI', Ubuntu, Sans-Serif; }
+  </style>
+  <rect width="830" height="196" rx="12" fill="#0D1117"/>
+  <text x="25" y="36" fill="#8B5CF6" font-size="17" font-weight="600">Atividade por dia</text>
+  <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B5CF6" stop-opacity="0.45"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0.02"/></linearGradient></defs>
+  <path d="M46 158.0H808" stroke="#21262D" stroke-width="1"/>
+  <text x="36" y="162.0" text-anchor="end" fill="#8B949E" font-size="10">0</text>
+  <path d="M46 110.0H808" stroke="#21262D" stroke-width="1"/>
+  <text x="36" y="114.0" text-anchor="end" fill="#8B949E" font-size="10">22</text>
+  <path d="M46 62.0H808" stroke="#21262D" stroke-width="1"/>
+  <text x="36" y="66.0" text-anchor="end" fill="#8B949E" font-size="10">44</text>
+  <path d="M46.0 103.5 L72.3 112.2 L98.6 155.8 L124.8 110.0 L151.1 129.6 L177.4 112.2 L203.7 158.0 L229.9 92.5 L256.2 118.7 L282.5 158.0 L308.8 142.7 L335.0 131.8 L361.3 158.0 L387.6 138.4 L413.9 129.6 L440.1 136.2 L466.4 123.1 L492.7 110.0 L519.0 68.5 L545.2 155.8 L571.5 147.1 L597.8 125.3 L624.1 112.2 L650.3 144.9 L676.6 62.0 L702.9 149.3 L729.2 158.0 L755.4 158.0 L781.7 158.0 L808.0 158.0 L808.0 158 L46 158 Z" fill="url(#area)"/>
+  <path d="M46.0 103.5 L72.3 112.2 L98.6 155.8 L124.8 110.0 L151.1 129.6 L177.4 112.2 L203.7 158.0 L229.9 92.5 L256.2 118.7 L282.5 158.0 L308.8 142.7 L335.0 131.8 L361.3 158.0 L387.6 138.4 L413.9 129.6 L440.1 136.2 L466.4 123.1 L492.7 110.0 L519.0 68.5 L545.2 155.8 L571.5 147.1 L597.8 125.3 L624.1 112.2 L650.3 144.9 L676.6 62.0 L702.9 149.3 L729.2 158.0 L755.4 158.0 L781.7 158.0 L808.0 158.0" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="676.6" cy="62.0" r="3.5" fill="#EC4899" stroke="#0D1117" stroke-width="2"/>
+  <text x="676.6" y="52.0" text-anchor="middle" fill="#C9D1D9" font-size="11" font-weight="700">44</text>
+  <text x="46.0" y="176" text-anchor="start" fill="#8B949E" font-size="10">14/09</text>
+  <text x="229.9" y="176" text-anchor="middle" fill="#8B949E" font-size="10">21/09</text>
+  <text x="413.9" y="176" text-anchor="middle" fill="#8B949E" font-size="10">28/09</text>
+  <text x="597.8" y="176" text-anchor="middle" fill="#8B949E" font-size="10">05/10</text>
+  <text x="781.7" y="176" text-anchor="middle" fill="#8B949E" font-size="10">12/10</text>
+  <text x="808" y="36" text-anchor="end" fill="#8B949E" font-size="11">377 nos últimos 30 dias &#183; pico de 44</text>
+</svg>

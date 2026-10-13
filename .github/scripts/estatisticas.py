@@ -400,11 +400,93 @@ with open(os.path.join(ASSETS, "sequencia.svg"), "w",
     f.write(moldura(L, A, "", "\n".join(miolo)))
 
 
+
+# --------------------------------------------- cartao 4: 30 dias
+
+# Area em serie unica, porque a pergunta e "como variou ao longo do
+# tempo". Sem legenda: o titulo ja nomeia a serie. Sem numero em cada
+# ponto -- so o pico recebe rotulo. E, como SVG dentro de <img> nao
+# recebe hover, o eixo Y precisa carregar a leitura sozinho.
+
+JANELA = 30
+recentes = grade[-JANELA:]
+pico = max((d["contributionCount"] for d in recentes), default=0)
+soma = sum(d["contributionCount"] for d in recentes)
+
+L, A = 830, 196
+ESQ, DIR, TOPO, BASE = 46, 22, 62, 38   # BASE reserva a faixa do eixo X
+plot_l = L - ESQ - DIR
+plot_a = A - TOPO - BASE
+teto = max(pico, 1)
+passo = plot_l / max(len(recentes) - 1, 1)
+
+
+def ponto(i, valor):
+    return (ESQ + i * passo, TOPO + plot_a - valor / teto * plot_a)
+
+
+miolo = [
+    f'  <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1">'
+    f'<stop offset="0" stop-color="{TITULO}" stop-opacity="0.45"/>'
+    f'<stop offset="1" stop-color="{TITULO}" stop-opacity="0.02"/>'
+    f'</linearGradient></defs>'
+]
+
+# grade horizontal: hairline solida, um tom acima do fundo
+for fracao in (0, 0.5, 1):
+    y = TOPO + plot_a - fracao * plot_a
+    valor = round(teto * fracao)
+    miolo.append(f'  <path d="M{ESQ} {y:.1f}H{ESQ + plot_l}" stroke="{TRILHO}" '
+                 f'stroke-width="1"/>')
+    miolo.append(f'  <text x="{ESQ - 10}" y="{y + 4:.1f}" text-anchor="end" '
+                 f'fill="{APAGADO}" font-size="10">{valor}</text>')
+
+pontos = [ponto(i, d["contributionCount"]) for i, d in enumerate(recentes)]
+traco = " ".join(f"{'M' if i == 0 else 'L'}{x:.1f} {y:.1f}"
+                 for i, (x, y) in enumerate(pontos))
+miolo.append(f'  <path d="{traco} L{ESQ + plot_l:.1f} {TOPO + plot_a} '
+             f'L{ESQ} {TOPO + plot_a} Z" fill="url(#area)"/>')
+miolo.append(f'  <path d="{traco}" fill="none" stroke="{TITULO}" '
+             f'stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
+
+# rotulo so no pico -- numero em todo ponto vira ruido
+if pico:
+    i_pico = max(range(len(recentes)),
+                 key=lambda i: recentes[i]["contributionCount"])
+    px, py = ponto(i_pico, pico)
+    miolo.append(f'  <circle cx="{px:.1f}" cy="{py:.1f}" r="3.5" '
+                 f'fill="{ACENTO}" stroke="{FUNDO}" stroke-width="2"/>')
+    ancora = "end" if i_pico > len(recentes) - 5 else "middle"
+    miolo.append(f'  <text x="{px:.1f}" y="{py - 10:.1f}" text-anchor="{ancora}" '
+                 f'fill="{TEXTO}" font-size="11" font-weight="700">{pico}</text>')
+
+# eixo X: uma data a cada 7 dias, mais o ultimo dia
+marcas = list(range(0, len(recentes), 7))
+# so acrescenta o ultimo dia se ele nao colar na marca anterior:
+# a 1 dia de distancia os dois rotulos se sobrepoem.
+if marcas and len(recentes) - 1 - marcas[-1] >= 4:
+    marcas.append(len(recentes) - 1)
+for i in marcas:
+    x = ESQ + i * passo
+    a, m, d = recentes[i]["date"].split("-")
+    ancora = "start" if i == 0 else ("end" if i == len(recentes) - 1 else "middle")
+    miolo.append(f'  <text x="{x:.1f}" y="{TOPO + plot_a + 18}" '
+                 f'text-anchor="{ancora}" fill="{APAGADO}" font-size="10">'
+                 f'{d}/{m}</text>')
+
+miolo.append(f'  <text x="{L - DIR}" y="36" text-anchor="end" fill="{APAGADO}" '
+             f'font-size="11">{num(soma)} nos últimos {JANELA} dias '
+             f'&#183; pico de {pico}</text>')
+
+with open(os.path.join(ASSETS, "atividade.svg"), "w",
+          encoding="utf-8", newline="\n") as f:
+    f.write(moldura(L, A, "Atividade por dia", chr(10).join(miolo)))
+
 # -------------------------------------------------------- bloco final
 
 assinatura = hashlib.sha1(
     f"{estrelas}|{commits}|{prs}|{repos}|{contribuicoes}|{atual}|{maior}|"
-    f"{ativos}|{principais}|{LAYOUT}".encode()
+    f"{ativos}|{principais}|{LAYOUT}|{recentes}".encode()
 ).hexdigest()[:8]
 base = f"https://raw.githubusercontent.com/{USUARIO}/{USUARIO}/main/assets"
 
@@ -415,6 +497,8 @@ bloco_readme = f"""{INICIO}
 <img src="{base}/linguagens.svg?v={assinatura}" alt="Linguagens mais usadas" />
 
 <img src="{base}/sequencia.svg?v={assinatura}" alt="Sequência de contribuições" />
+
+<img src="{base}/atividade.svg?v={assinatura}" alt="Contribuições por dia nos últimos 30 dias" />
 
 </div>
 {FIM}"""
@@ -435,3 +519,4 @@ print(f"  repositorios  : {repos}")
 print(f"  contribuicoes : {num(contribuicoes)}  ({ativos} dias ativos)")
 print(f"  sequencias    : atual {atual}, maior {maior}")
 print(f"  linguagens    : {len(por_lingua)} ({num(total_bytes)} bytes)")
+print(f"  30 dias       : {num(soma)} contribuicoes, pico de {pico}")
