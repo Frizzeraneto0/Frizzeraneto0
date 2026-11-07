@@ -9,27 +9,27 @@
   <path d="M46 158.0H808" stroke="#21262D" stroke-width="1"/>
   <text x="36" y="162.0" text-anchor="end" fill="#8B949E" font-size="10">0</text>
   <path d="M46 110.0H808" stroke="#21262D" stroke-width="1"/>
-  <text x="36" y="114.0" text-anchor="end" fill="#8B949E" font-size="10">22</text>
+  <text x="36" y="114.0" text-anchor="end" fill="#8B949E" font-size="10">12</text>
   <path d="M46 62.0H808" stroke="#21262D" stroke-width="1"/>
-  <text x="36" y="66.0" text-anchor="end" fill="#8B949E" font-size="10">44</text>
-  <path d="M46.0 62.0 L72.3 149.3 L98.6 158.0 L124.8 158.0 L151.1 158.0 L177.4 144.9 L203.7 123.1 L229.9 151.5 L256.2 129.6 L282.5 158.0 L308.8 158.0 L335.0 142.7 L361.3 127.5 L387.6 127.5 L413.9 103.5 L440.1 110.0 L466.4 158.0 L492.7 158.0 L519.0 153.6 L545.2 142.7 L571.5 158.0 L597.8 120.9 L624.1 144.9 L650.3 158.0 L676.6 158.0 L702.9 158.0 L729.2 127.5 L755.4 155.8 L781.7 131.8 L808.0 144.9 L808.0 158 L46 158 Z" fill="url(#area)"/>
-  <path d="M46.0 62.0 L72.3 149.3 L98.6 158.0 L124.8 158.0 L151.1 158.0 L177.4 144.9 L203.7 123.1 L229.9 151.5 L256.2 129.6 L282.5 158.0 L308.8 158.0 L335.0 142.7 L361.3 127.5 L387.6 127.5 L413.9 103.5 L440.1 110.0 L466.4 158.0 L492.7 158.0 L519.0 153.6 L545.2 142.7 L571.5 158.0 L597.8 120.9 L624.1 144.9 L650.3 158.0 L676.6 158.0 L702.9 158.0 L729.2 127.5 L755.4 155.8 L781.7 131.8 L808.0 144.9" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="46.0" cy="62.0" r="3.5" fill="#EC4899" stroke="#0D1117" stroke-width="2"/>
-  <text x="46.0" y="53.0" text-anchor="start" fill="#C9D1D9" font-size="10.5" font-weight="700">44</text>
-  <circle cx="203.7" cy="123.1" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
-  <text x="203.7" y="114.1" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">16</text>
-  <circle cx="361.3" cy="127.5" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
-  <text x="361.3" y="118.5" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">14</text>
-  <circle cx="413.9" cy="103.5" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
-  <text x="413.9" y="94.5" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">25</text>
-  <circle cx="597.8" cy="120.9" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
-  <text x="597.8" y="111.9" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">17</text>
-  <circle cx="729.2" cy="127.5" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
-  <text x="729.2" y="118.5" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">14</text>
-  <text x="46.0" y="176" text-anchor="start" fill="#8B949E" font-size="10">08/10</text>
-  <text x="229.9" y="176" text-anchor="middle" fill="#8B949E" font-size="10">15/10</text>
-  <text x="413.9" y="176" text-anchor="middle" fill="#8B949E" font-size="10">22/10</text>
-  <text x="597.8" y="176" text-anchor="middle" fill="#8B949E" font-size="10">29/10</text>
-  <text x="781.7" y="176" text-anchor="middle" fill="#8B949E" font-size="10">05/11</text>
-  <text x="808" y="36" text-anchor="end" fill="#8B949E" font-size="11">233 nos últimos 30 dias &#183; pico de 44</text>
+  <text x="36" y="66.0" text-anchor="end" fill="#8B949E" font-size="10">25</text>
+  <path d="M46.0 142.6 L72.3 158.0 L98.6 158.0 L124.8 158.0 L151.1 135.0 L177.4 96.6 L203.7 146.5 L229.9 108.1 L256.2 158.0 L282.5 158.0 L308.8 131.1 L335.0 104.2 L361.3 104.2 L387.6 62.0 L413.9 73.5 L440.1 158.0 L466.4 158.0 L492.7 150.3 L519.0 131.1 L545.2 158.0 L571.5 92.7 L597.8 135.0 L624.1 158.0 L650.3 158.0 L676.6 158.0 L702.9 104.2 L729.2 154.2 L755.4 111.9 L781.7 135.0 L808.0 158.0 L808.0 158 L46 158 Z" fill="url(#area)"/>
+  <path d="M46.0 142.6 L72.3 158.0 L98.6 158.0 L124.8 158.0 L151.1 135.0 L177.4 96.6 L203.7 146.5 L229.9 108.1 L256.2 158.0 L282.5 158.0 L308.8 131.1 L335.0 104.2 L361.3 104.2 L387.6 62.0 L413.9 73.5 L440.1 158.0 L466.4 158.0 L492.7 150.3 L519.0 131.1 L545.2 158.0 L571.5 92.7 L597.8 135.0 L624.1 158.0 L650.3 158.0 L676.6 158.0 L702.9 104.2 L729.2 154.2 L755.4 111.9 L781.7 135.0 L808.0 158.0" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="177.4" cy="96.6" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
+  <text x="177.4" y="87.6" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">16</text>
+  <circle cx="229.9" cy="108.1" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
+  <text x="229.9" y="99.1" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">13</text>
+  <circle cx="335.0" cy="104.2" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
+  <text x="335.0" y="95.2" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">14</text>
+  <circle cx="387.6" cy="62.0" r="3.5" fill="#EC4899" stroke="#0D1117" stroke-width="2"/>
+  <text x="387.6" y="53.0" text-anchor="middle" fill="#C9D1D9" font-size="10.5" font-weight="700">25</text>
+  <circle cx="571.5" cy="92.7" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
+  <text x="571.5" y="83.7" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">17</text>
+  <circle cx="702.9" cy="104.2" r="2.8" fill="#8B5CF6" stroke="#0D1117" stroke-width="2"/>
+  <text x="702.9" y="95.2" text-anchor="middle" fill="#8B949E" font-size="10.5" font-weight="600">14</text>
+  <text x="46.0" y="176" text-anchor="start" fill="#8B949E" font-size="10">09/10</text>
+  <text x="229.9" y="176" text-anchor="middle" fill="#8B949E" font-size="10">16/10</text>
+  <text x="413.9" y="176" text-anchor="middle" fill="#8B949E" font-size="10">23/10</text>
+  <text x="597.8" y="176" text-anchor="middle" fill="#8B949E" font-size="10">30/10</text>
+  <text x="781.7" y="176" text-anchor="middle" fill="#8B949E" font-size="10">06/11</text>
+  <text x="808" y="36" text-anchor="end" fill="#8B949E" font-size="11">189 nos últimos 30 dias &#183; pico de 25</text>
 </svg>
