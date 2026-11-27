@@ -78,12 +78,12 @@ servidor, e o mínimo possível de mágica no meio do caminho.
 <!-- ESTATISTICAS:INICIO -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/estatisticas.svg?v=e5b25821" alt="Estatísticas do GitHub" />
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/linguagens.svg?v=e5b25821" alt="Linguagens mais usadas" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/estatisticas.svg?v=f64a5756" alt="Estatísticas do GitHub" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/linguagens.svg?v=f64a5756" alt="Linguagens mais usadas" />
 
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/sequencia.svg?v=e5b25821" alt="Sequência de contribuições" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/sequencia.svg?v=f64a5756" alt="Sequência de contribuições" />
 
-<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/atividade.svg?v=e5b25821" alt="Contribuições por dia nos últimos 30 dias" />
+<img src="https://raw.githubusercontent.com/Frizzeraneto0/Frizzeraneto0/main/assets/atividade.svg?v=f64a5756" alt="Contribuições por dia nos últimos 30 dias" />
 
 </div>
 <!-- ESTATISTICAS:FIM -->
